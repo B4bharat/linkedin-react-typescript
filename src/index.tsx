@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <h1>Hello React TSX</h1>
       <h2>TypeScript now works in CRA!</h2>
-      <Message />
+      <Message message="This is a simple message" />
 
       <Hello type="TypeScript" />
       <BarChart />
