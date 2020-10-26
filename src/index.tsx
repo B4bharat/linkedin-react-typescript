@@ -7,7 +7,17 @@ import BarChart from "./BarChart";
 import "./styles.css";
 
 function App() {
-  let firstValue: string = "Manny";
+  // Tuple
+  let aTuple: [string, number] = ["Manny", 34];
+  // enum
+  enum Codes {
+    first = 1,
+    second = 2
+  }
+  // void
+  const warning = (): void => {
+    console.log("Warning");
+  };
 
   return (
     <div className="App">
@@ -15,7 +25,7 @@ function App() {
       <h2>TypeScript now works in CRA!</h2>
       <p>
         {" "}
-        The value {firstValue} is of {typeof firstValue} type!
+        The value {aTuple[0]} is of {typeof aTuple[0]} type!
       </p>
 
       <Hello type="TypeScript" />
