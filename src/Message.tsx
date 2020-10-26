@@ -1,7 +1,16 @@
 import React from "react";
 
-const Message = (prop: { message: string }): any => {
-  return <div>{prop.message}</div>;
+interface UserMessage {
+  name: string;
+  message: string;
+}
+
+const Message = (props: UserMessage): any => {
+  return (
+    <div>
+      {props.name}, {props.message}
+    </div>
+  );
 };
 
 export default Message;
